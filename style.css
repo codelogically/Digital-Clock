@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #2e2e44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .digital-clock {
+  position: relative;
+  width: 450px;
+  height: 450px;
+  background-color: #2d2f41;
+  color: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 0 5px 25px rgba(14, 21, 37, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.digital-clock .clock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock .left-side {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left-side .hours,
+.left-side .minutes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  font-size: 6.5em;
+  font-weight: 600;
+  padding: 0 10px;
+  line-height: 125px;
+}
+.left-side .line {
+  width: 50px;
+  height: 6px;
+  background-color: #929292;
+  border-radius: 100%;
+}
+
+.hours {
+  background: -webkit-linear-gradient(90deg, #634dff, #5fd4ff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.minutes {
+  background: -webkit-linear-gradient(90deg, #ff5e9a, #ffb960);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.clock .right-side {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  /* margin-left: 10px; */
+  height: 13em;
+}
+
+.right-side .period,
+.right-side .seconds {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+.right-side .period {
+  background: -webkit-linear-gradient(90deg, #f7b63f, #faf879);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.right-side .seconds {
+  background: -webkit-linear-gradient(90deg, #24ff6d, #2f93f1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.digital-clock .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+  font-weight: 500;
+  gap: 10px;
+  background: -webkit-linear-gradient(90deg, #ae4af6, #ff98d1);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
